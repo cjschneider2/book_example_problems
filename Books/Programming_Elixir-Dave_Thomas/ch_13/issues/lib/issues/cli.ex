@@ -10,10 +10,10 @@ defmodule Issues.CLI do
   of the last `n` issues in a GitHub Project.
   """
 
-  def run argv do
+  def main(argv) do
     argv
-      |> parse_args
-      |> process
+    |> parse_args
+    |> process
   end
 
   @doc """
